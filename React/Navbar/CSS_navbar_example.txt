@@ -1,0 +1,129 @@
+header{
+    background: COLOR;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    padding: 1em 0;
+}
+.navFlex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    width: 100%;
+    background: COLOR;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+    
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 2rem;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a{
+    color: COLOR;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0;
+    margin-right: 1em;
+    transition: opacity 100ms ease-in-out;
+}
+nav a:hover{
+    color: COLOR;
+}
+.navToggle{ 
+    display: none;
+}
+.navToggleLabel{
+    position: absolute;
+    margin-left: 1em;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navToggle:checked ~ nav{
+    transform: scale(1,1);
+}
+.navToggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 150ms ease-in-out 150ms;
+}
+
+    /* --------------- Images --------------- */
+
+.logo img{
+    max-width: 12rem;
+}
+
+    /* --------------- Responsive Button --------------- */
+
+.navToggleLabel span,
+.navToggleLabel span::before,
+.navToggleLabel span::after{
+    display: block;
+    background: COLOR;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.navToggleLabel span::before,
+.navToggleLabel span::after{
+    content: '';
+    position: absolute;
+}
+.navToggleLabel span::before{
+    bottom: 7px;
+}
+.navToggleLabel span::after{
+    top: 7px;
+}
+.navToggleLabel:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px){
+    .navToggleLabel{
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 7rem auto minmax(600px, 1fr) 1rem;
+    }
+    .logo{
+        grid-column: 2/3;
+    }
+    nav{
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav a{
+        opacity: 1;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+}

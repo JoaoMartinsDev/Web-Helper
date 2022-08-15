@@ -1,0 +1,40 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import styles from './Navbar.module.css'
+
+import { navItemList } from "./navItemList"
+
+const Navbar = () => {
+
+    const [toggleNav, setToggleNav] = useState(false);
+
+    function toggleNavFunc(){
+        if(toggleNav === false) return setToggleNav(true)
+        return setToggleNav(false)
+    }
+
+    return (
+        <header className={styles.header}>
+            <div className={styles.logo}><Link to='/'><img src={LOGO} alt="LOGO" /></Link></div>
+            <input type='checkbox' id='navToggle' className={styles.navToggle} onChange={toggleNavFunc} />
+            <div className={styles.navFlex}>
+                <nav>
+                    <ul>
+                        <li>
+                            {navItemList.map((menu, index) => {
+                                return <Link key={index} to={menu.path}>{menu.title}</Link>;
+                            })}
+                        </li>
+                    </ul>
+                </nav>
+                <label htmlFor='navToggle' className={styles.navToggleLabel}>
+                    <span></span>
+                </label>
+            </div>
+            
+        </header>
+    );
+}
+
+export default Navbar;

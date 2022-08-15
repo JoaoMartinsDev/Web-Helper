@@ -1,0 +1,14 @@
+import { Routes, Route } from 'react-router-dom'
+
+return (
+	<Routes>
+		<Route path='/' element={<Homepage />} exact />
+        	<Route path='/page1' element={<Page1 />} />
+    		<Route path='/page2' element={<Page2 />} />
+		<Route path='/page3' element={<Page3 />} />
+    		<Route path='/contacts' element={<Contacts />} />
+    		<Route path='/terms' element={<Terms />} />
+    		<Route path='/privacy' element={<Privacy />} />
+		<Route path='/error' element={<Error />} />
+	</Routes>
+)
