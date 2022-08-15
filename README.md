@@ -1,3 +1,4 @@
-# Website Guide
+# Website Helper
 
-Personal guide to help speeding up the  process of making a website.
+Storage of react scripts.
+Goal: speed up the process of making a website.
