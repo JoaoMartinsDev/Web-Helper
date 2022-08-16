@@ -1,5 +1,5 @@
 header{
-    background: COLOR;
+    background: rgb(0, 66, 37);
     top: 0;
     width: 100%;
     position: fixed;
@@ -12,16 +12,18 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
+.langSelector{
+    color: white;
+    margin-right: .8rem;
+}
 nav{
     position: absolute;
     text-align: left;
     top: 100%;
     width: 100%;
-    background: COLOR;
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 300ms ease-in-out;
-    
 }
 nav ul{
     margin: 0;
@@ -34,18 +36,18 @@ nav li{
     margin-left: 1em;
 }
 nav a{
-    color: COLOR;
+    color: rgb(245, 245, 245);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     opacity: 0;
     margin-right: 1em;
     transition: opacity 100ms ease-in-out;
 }
 nav a:hover{
-    color: COLOR;
+    color: rgb(255, 140, 66);
 }
 .navToggle{ 
-    display: none;
+    display: none; 
 }
 .navToggleLabel{
     position: absolute;
@@ -66,9 +68,19 @@ nav a:hover{
 
     /* --------------- Images --------------- */
 
-.logo img{
+.logo img{ /* CHECK WHEN THE LOGO IS PLACED */
+    filter: invert(1);
     max-width: 12rem;
 }
+.profile img{
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+}
+.profile img:hover{
+    cursor: pointer;
+}
+
 
     /* --------------- Responsive Button --------------- */
 
@@ -76,7 +88,7 @@ nav a:hover{
 .navToggleLabel span::before,
 .navToggleLabel span::after{
     display: block;
-    background: COLOR;
+    background: rgb(0, 66, 37);
     height: 2px;
     width: 2em;
     border-radius: 2px;
