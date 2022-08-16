@@ -1,0 +1,21 @@
+import { Link } from 'react-router-dom'
+
+
+return (
+    <div className={styles.wrap}>
+      <div className={styles.leftSection}>
+        <div className={styles.content}>
+          <h2>Do you like the red side more?</h2>
+          <h4>Hell, this is hell</h4>
+          <Link to="/Contacts"><button className={`${styles.btn} ${styles.btnB}`}>Give us the details</button></Link>
+        </div>
+      </div>
+      <div className={styles.rightSection}>
+        <div className={styles.content}>
+          <h2>Or the blue side?</h2>
+          <h4>Wave after wave...</h4>
+          <Link to="/Contacts"><button className={`${styles.btn} ${styles.btnR}`}>Let's test it</button></Link>
+        </div>
+      </div>
+    </div>
+  )
