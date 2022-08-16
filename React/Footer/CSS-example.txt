@@ -1,0 +1,26 @@
+footer{
+    background: rgb(28, 26, 36);
+    padding: .5em;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+}
+.copyright,
+.social{
+    grid-column: 3;
+    text-align: center;
+}
+.policies{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+.policies a{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-size: .8rem;
+}
+.policies a:hover{
+    color: rgb(171, 94, 233);
+}
