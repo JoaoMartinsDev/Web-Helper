@@ -1,9 +1,8 @@
 import styles from './CSS-example.module.css'
-import { team_photo } from '../../img'
 
 return (
     <div className={styles.teamCard}>
-        <img src={team_photo} alt='img' />
+        <img src={member.img} alt={member.alt} />
         <h4>{member.name} {member.surname}</h4>
         <p>{member.skills}</p>
     </div>
