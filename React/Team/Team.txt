@@ -1,0 +1,10 @@
+import styles from './CSS-example.module.css'
+import {TeamCard, teamData} from '../'
+
+return (
+    <div className={styles.team}>
+        {teamData.map((member, index) => (
+            <TeamCard member={member} key={index} />
+        ))}
+    </div>
+  )

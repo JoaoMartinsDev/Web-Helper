@@ -1,0 +1,30 @@
+/* Placeholder data to be replaced, or changed to DB connection */
+
+import { team_photo1, team_photo2, team_photo3, team_photo4 } from "../../img";
+
+export const teamData = [
+    {
+        name: 'Name',
+        surname: 'Surname',
+        skills: 'Front-end',
+        img: `${team_photo1}`
+    },
+    {
+        name: 'Name',
+        surname: 'Surname',
+        skills: 'Back-end',
+        img: `${team_photo2}`
+    },
+    {
+        name: 'Name',
+        surname: 'Surname',
+        skills: 'Marketing, HR',
+        img: `${team_photo3}`
+    },
+    {
+        name: 'Surname',
+        surname: 'Seixas',
+        skills: 'Full-stack',
+        img: `${team_photo4}`
+    }
+]
