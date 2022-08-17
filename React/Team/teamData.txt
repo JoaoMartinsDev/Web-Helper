@@ -7,24 +7,28 @@ export const teamData = [
         name: 'Name',
         surname: 'Surname',
         skills: 'Front-end',
-        img: `${team_photo1}`
+        img: `${team_photo1}`,
+        alt: 'image1'
     },
     {
         name: 'Name',
         surname: 'Surname',
         skills: 'Back-end',
-        img: `${team_photo2}`
+        img: `${team_photo2}`,
+        alt: 'image2'
     },
     {
         name: 'Name',
         surname: 'Surname',
         skills: 'Marketing, HR',
-        img: `${team_photo3}`
+        img: `${team_photo3}`,
+        alt: 'image3'
     },
     {
         name: 'Surname',
         surname: 'Seixas',
         skills: 'Full-stack',
-        img: `${team_photo4}`
+        img: `${team_photo4}`,
+        alt: 'image4'
     }
 ]
