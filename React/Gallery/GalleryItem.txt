@@ -1,0 +1,13 @@
+import styles from './CSS-example.module.css'
+
+export default function GalleryItem(props){
+    return(
+        <div className={`${styles.itemWrap} ${props.row ? props.row : ''} ${props.col ? props.col : ''}`}>
+            <div className={styles.item}>
+                <div className={styles.image}>
+                    <img src={props.data.url} alt={props.data.title} key={props.data.id}/>
+                </div>
+            </div>
+        </div>
+    );
+}

@@ -1,0 +1,16 @@
+import styles from './CSS-example.module.css'
+import GalleryItem from './GalleryItem';
+import { gallerieData } from '../'
+
+return(
+        <div className={styles.gallery}>
+            <GalleryItem data={portfolioData[0]} col={styles.c2} />
+            <GalleryItem data={portfolioData[1]} col={styles.r2} />
+            <GalleryItem data={portfolioData[2]} col={styles.r2} />
+            <GalleryItem data={portfolioData[3]} />
+            <GalleryItem data={portfolioData[4]} col={styles.r3}/>
+            <GalleryItem data={portfolioData[5]} />
+            <GalleryItem data={portfolioData[6]} />
+            <GalleryItem data={portfolioData[7]} col={styles.r2}/>
+        </div>
+    );

@@ -1,0 +1,42 @@
+export const galleryData = [
+    {
+        id: '1',
+        title: 'pc',
+        url: 'https://source.unsplash.com/1600x900/?computers'
+    }, 
+    {
+        id: '2',
+        title: 'people',
+        url: 'https://source.unsplash.com/1600x900/?people'
+    },
+    {
+        id: '3',
+        title: 'nature',
+        url: 'https://source.unsplash.com/1600x900/?nature'
+    },
+    {
+        id: '4',
+        title: 'van gogh',
+        url: 'https://source.unsplash.com/1600x900/?abstract'
+    },
+    {
+        id: '5',
+        title: 'cars',
+        url: 'https://source.unsplash.com/1600x900/?cars'
+    },
+    {
+        id: '6',
+        title: 'tech',
+        url: 'https://source.unsplash.com/1600x900/?tech'
+    },
+    {
+        id: '7',
+        title: 'pc7',
+        url: 'https://source.unsplash.com/1600x900/?animals'
+    },
+    {
+        id: '8',
+        title: 'art',
+        url: 'https://source.unsplash.com/1600x900/?art'
+    },
+];
