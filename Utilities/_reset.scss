@@ -1,0 +1,70 @@
+// Including padding and border in element's width and height.
+* { 
+    box-sizing: border-box; 
+}
+
+// Sets body's width to the edge of the screen
+body {  
+    margin: 0; 
+    padding: 0; 
+}
+
+// Sets default font used in all elements (font consistecy)
+body,
+input,
+button,
+select,
+textarea {
+    font-family: 'Raleway', sans-ser;
+    color: #222222;
+}
+
+// Remove link's underline and sets it's color to this reset file's default
+a {
+    text-decoration: none; 
+}
+
+a:link { 
+    color: inherit; 
+}
+
+a:hover { 
+    color: inherit; 
+}
+
+a:active { 
+    color: inherit; 
+}
+
+a:visited { 
+    color: inherit; 
+}
+
+// Creates cell spacing between them and consistent test alignment to the left
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+// Removes default margin and creates consistent font weight for h2 to h6
+p {
+    margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+// Creates consistent list spacing
+ul, ol {
+    margin: 0 0 1rem;
+    padding: 0 0 1rem;
+}
