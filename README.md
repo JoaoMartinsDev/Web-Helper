@@ -1,4 +1,4 @@
 # Website Helper
 
-Storage of react scripts.
+Storage of script snippets.
 Goal: speed up the process of making a website.
